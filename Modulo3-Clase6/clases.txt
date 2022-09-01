@@ -1,0 +1,15 @@
+.nombreDeClase{
+	Solo afecta a la clase en concreto
+}
+
+.nombreDeClase > .nombreDeClase2{
+	solo afecta a las clases que se encuentran dentro de la clase padre en este caso .nombreDeClase
+}
+
+.nombreDeClase .nombreDeClase2{
+	nos reduce tener que poner dos CSS que van a realizar misma acción
+}
+
+.nombreDeClase.nombreDeClase2...nombreDeClaseN{
+	debe cumplirse todas las condiciones que nuestro elemento cuente con todos los nombre de clase seleccionados
+}

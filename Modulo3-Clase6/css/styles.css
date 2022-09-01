@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	background-color: #f9f9fd;
+}
+
+.page-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	background-color: #607d8b;
+	border-radius: 4px;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2);
+	margin-top: 50px;
+
+}
+
+.logo{
+	padding: 15px;
+	border-radius: 4px;
+	background-color: #ff5722;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+.menu{
+	padding: 10px;
+	margin: 0;
+	list-style: none;
+	border-radius: 4px;
+	background-color: #2196f3;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2);
+
+	display: flex;
+}
+
+.menu > .item:not(:last-child){
+	margin-right: 10px;
+}
+
+.menu.reversed > .item:not(:last-child){
+	margin-right: 0px;
+	margin-left: 10px;
+}
+.menu.reversed{
+	flex-direction: row-reverse;
+	margin-top: 20px;
+}
+
+.menu .link{
+	display: block;
+	padding: 10px;
+	border-radius: 4px;
+	text-decoration: none;
+	color: black;
+	background-color: #fff;
+}
+
+.menu .link:hover{
+	text-decoration: underline;
+}
+
+.menu.center{
+	justify-content: center;
+}
+
+.menu.space-between{
+	justify-content: space-between;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.card{
+	display: flex;
+	flex-direction: row;
+	width: 640px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2)
+}
+
+.card.flex-start-aligned{
+	align-items: flex-start;
+}
+
+.card > .content{
+	margin-left: 15px;
+}
+
+.container{
+	max-width: 1200px;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-set {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	list-style: none;
+	gap: 10px;
+}
+
+.item2{
+	flex-basis: calc((100% - 20px) / 3);
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+}
+
+.item2 h2{
+	margin-top: 0;
+	font-size: 20px;
+}
+
+.item p {
+  margin: 0;
+}
+
+.container2{
+	display: flex;
+	max-width: 960px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.sidebar{
+	flex-basis: 250px;
+	margin-right: 24px;
+}
+
+.content2{
+	flex-grow: 1;
+}
+
+.sidebar,
+.content2{
+	height: 350px;
+	padding: 20px;
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2)
+}
