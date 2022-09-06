@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: sans-serif;
+   line-height: 1.5;
+   color: #2a2a2a;
+}
+
+.container {
+   max-width: 960px;
+   padding-left: 8px;
+   padding-right: 8px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.title-set {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-top: 40px;
+   margin-left: -40px;
+   margin-top: -40px;
+}
+
+.title {
+   position: relative;
+   margin-left: 40px;
+   margin-top: 40px;
+   height: 120px;
+   flex-basis: calc(100% / 2 - 40px);
+   border: 2px dashed #2a2a2a;
+   border-radius: 4px;
+   background-color: #fff;
+   background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png");
+   background-size: 40px;
+}
+
+.title::before {
+   position: absolute;
+   top: -32px;
+   width: 100%;
+   content: "";
+   font-weight: 700;
+   font-size: 20px;
+   text-align: center;
+}
+
+.no-repeat {
+   background-repeat: no-repeat;
+}
+
+.no-repeat::before {
+   content: "no-repeat";
+   font-family: monospace;
+}
+
+.repeat-x {
+   background-repeat: repeat-x;
+}
+
+.repeat-x::before {
+   content: "repeat-x";
+}
+
+.repeat-y {
+   background-repeat: repeat-y;
+}
+
+.repeat-y::before {
+   content: "repeat-y";
+}
+
+.repeat {
+   background-repeat: repeat;
+}
+
+.repeat::before {
+   content: "repeat";
+}
+
+

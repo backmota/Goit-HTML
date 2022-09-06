@@ -7,6 +7,16 @@ body{
 	background-color: #f9f9fd;
 }
 
+/*display: flex
+
+	La propiedad CSS flex es una propiedad resumida que indica la capacidad de 
+	un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. 
+	Los elementos flexibles pueden ser estirados para utilizar el espacio disponible
+	 proporcional a su factor de crecimiento flexible o su factor de contracción flexible
+	  para evitar desbordamiento.
+
+ */
+
 .page-header{
 	display: flex;
 	align-items: center;
@@ -34,6 +44,8 @@ body{
 .menu{
 	padding: 10px;
 	margin: 0;
+	/*La propiedad de estilo de lista (list-style) permite definir de golpe todos los parámetros:
+	 list-style-type, list-style-image, y list-style-position.*/
 	list-style: none;
 	border-radius: 4px;
 	background-color: #2196f3;

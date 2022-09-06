@@ -1,0 +1,22 @@
+:root{
+	--primary-black: #8059E3;
+}
+
+h1{
+	background-color: var(--purple-color);
+
+}
+
+h2{
+	background-color: var(--purple-color);
+}
+
+
+h3{
+	background-color: var(--purple-color);
+}
+
+h4{
+	background-color: var(--purple-color);
+}
+
