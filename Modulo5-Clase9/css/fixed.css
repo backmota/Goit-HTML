@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.chat-button{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1653/1653630.png");
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

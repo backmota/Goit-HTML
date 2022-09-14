@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+.box{
+  border: 2px solid tomato;
+  width: 400px;
+  height: 200px;
+  overflow: scroll;
+}
