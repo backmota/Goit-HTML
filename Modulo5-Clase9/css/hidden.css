@@ -29,7 +29,7 @@ h1 {
    transform: translatex(0%);
 }
 
-.overlay {
+.box > .overlay {
   position: absolute;
   top: 0;
   left: 0;

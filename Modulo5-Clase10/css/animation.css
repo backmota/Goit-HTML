@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9fd;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: tomato;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition-property: background-color, transform;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.box:hover{
+  animation-name: changeColor;
+}
+
+@keyframes changeColor{
+  0%{
+    background-color: teal;
+    transform: rotate(0deg);
+  }
+ 
+  100%{
+    background-color: deepskyblue;
+    transform: rotate(360deg);
+  }
+}

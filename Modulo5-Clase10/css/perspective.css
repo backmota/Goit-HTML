@@ -1,0 +1,78 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f9f9fd;
+}
+
+.container {
+  display: flex;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.scene {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box.rotate-x {
+  animation: rotateX 1500ms infinite alternate ease-in-out 1000ms;
+  background-color: tomato;
+}
+
+.box.rotate-y {
+  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+   background: url(https://goit.global/mx/assets/images/logo-goit.svg);
+   background-repeat: no-repeat;
+}
+
+
+.scene{
+  margin-left: 50px;
+}
+
+@keyframes rotateX {
+  0% {
+      transform: perspective(400px) rotateX(0deg);
+    }
+
+    100% {
+      transform: perspective(400px) rotateX(60deg);
+    }
+}
+
+@keyframes rotateY {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(60deg);
+  }
+}
