@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Form</title>
+</head>
+<body>
+	<form id="sigup_form" class="form" name="sigup_form" autocomplete="on" novalidate>
+		<label for="user_email">
+			Ingresa tu Email:
+		<input id="user_email" type="email" name="email"  placeholder="tucorreo@email.com" />
+		</label>
+		<label for="user_password" >
+			Password
+			<input id="user_password" type="password" name="password" minlength="6" maxlength="12">
+		</label>
+		<label for="user_password_two">
+			Verifica tu password
+			<input id="user_password_two" type="password" name="verifica" minlength="6" maxlength="12">
+		</label>
+
+		<label>
+			Edad
+			<input type="number" name="age" min="0" max="99">
+		</label>
+
+		<label>
+			Fecha de nacimiento
+			<input type="date" name="date" min="2022-01-01" max="2009-01-01">
+		</label>
+
+		<label>
+			Celular:
+			<input type="tel" name="phone_number">
+		</label>
+
+		<p>Elige el tipo de cuenta</p>
+		<label for="user_type">
+			<input id="user_type" type="radio" name="user_type" value="free" c>	
+			Free		
+		</label>
+		<label for="user_type">
+			<input id="user_type" type="radio" name="user_type" value="Plus">	
+			Plus		
+		</label>
+		<label for="user_type">
+			<input id="user_type" type="radio" name="user_type" value="Premium">	
+			Premium		
+		</label>
+
+		<p>Tipo de música favorita</p>
+		<label>
+			<input type="checkbox" name="music" value="Rock">
+			Rock
+		</label>
+		<label>
+			<input type="checkbox" name="music" value="Pop">
+			Pop
+		</label>
+		<label>
+			<input type="checkbox" name="music" value="Salsa">
+			Salsa
+		</label>
+		<br>
+		<label>
+			Sube tu ID(CEDULA) para validar tu información
+			<input type="file" name="cedula">
+		</label>
+		<br>
+		<label>
+			Quiero un prestamos de <span class="js-selected-value">100</span>
+			<input type="range" name="prestamo" value="100" min="50" max="1000" step="100">
+		</label>
+		<br>
+
+		<label>Selecciona tu navegador favorito
+			<input list="browsers" name="fav" id="fav">
+		</label>
+
+		<datalist id="browsers">
+			<option>Edge</option>
+			<option>Firefox</option>
+			<option>Chrome</option>
+			<option>Opera</option>
+			<option>Safari</option>
+		</datalist>
+
+		<label for="browsers">Selecciona tu navegador favorito</label>
+		<select id="browsers" name="browsers">
+			<option value="Edge">Edge</option>
+			<option value="Edge">Firefox</option>
+			<option value="Edge">Chrome</option>
+			<option value="Edge">Opera</option>
+			<option value="Edge">Safari</option>
+		</select>
+		<br>
+		<label>Deja tus comentarios:
+			<textarea name="feedback" rows="3" maxlength="900" placeholder="Escribe tus comentarios aqui..."></textarea>
+		</label>
+		<br>
+
+		<button type="submit">Login</button>
+	</form>
+
+	<script type="text/javascript">
+		const rangeInput = document.querySelector('input[type="range"]')
+		const output = document.querySelector('.js-selected-value');
+		rangeInput.addEventListener('input', e => output.textContent = e.target.value)
+	</script>
+</body>
+</html>
+
+
+
+

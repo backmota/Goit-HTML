@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Form</title>
+</head>
+<body>
+	<form>
+		<fieldset class="form-user">
+			<legend>Datos del Usuario</legend>
+				<label>
+					User:<input type="text" name="userName">
+				</label>
+				<label>
+					Email:<input type="email" name="userEmail">
+				</label>
+		</fieldset>
+		<fieldset class="form-code">
+			<legend>Selecciona tu lenguaje favorito de programación</legend>
+				<label>
+				      <input type="checkbox" name="language" value="python">
+				      Python
+				    </label>
+				    <label>
+				      <input type="checkbox" name="language" value="js">
+				      JavaScript
+				    </label>
+				    <label>
+				      <input type="checkbox" name="language" value="ruby">
+				      Ruby
+				    </label>
+		</fieldset>
+		<button type="submit">Enviar</button>
+	</form>
+</body>
+</html>
