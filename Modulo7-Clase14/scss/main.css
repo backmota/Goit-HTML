@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: normal;
+  background-color: #d98328;
+}
+
+.section {
+  width: 100%;
+}
+.section__title {
+  color: #5a1321;
+}
+.section__text {
+  font-size: 14px;
+}
+
+.link {
+  color: #5a1321;
+}
+.link:hover, .link:focus {
+  color: #5a1321;
+}
+
+.button, .button-sucess {
+  display: inline-flex;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: gray;
+}
+.button:hover, .button-sucess:hover {
+  color: blue;
+}
+.button:hover .button__icon, .button-sucess:hover .button__icon {
+  background-color: teal;
+}
+.button:hover .button__label, .button-sucess:hover .button__label {
+  font-size: 20px;
+}
+.button__icon {
+  width: 20px;
+  height: 20px;
+}
+.button__icon:hover {
+  width: 50px;
+  height: 50px;
+}
+.button__label {
+  font-size: 16px;
+}
+
+.button-sucess {
+  background-color: green;
+}/*# sourceMappingURL=main.css.map */

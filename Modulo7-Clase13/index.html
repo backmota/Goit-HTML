@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Metodología BEM</title>
+</head>
+<body class="page">
+
+		<!-- SVG sprite with one icon to avoid repeating its markup -->
+		<svg style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" ><defs><symbol id="cart" viewBox="0 0 32 32"><path fill="var(--color1, #455a64)" d="M29.217 27.826a3.478 3.478 0 11-6.956 0 3.478 3.478 0 016.956 0zM15.304 27.826a3.478 3.478 0 11-6.956 0 3.478 3.478 0 016.956 0z"/><path fill="var(--color2, #ffc107)" d="M31.826 5.105a.696.696 0 00-.521-.235H6.262a.696.696 0 00-.682.834l2.783 13.913c.067.32.347.556.682.556a.706.706 0 00.092 0l20.869-2.783a.698.698 0 00.598-.6v-.003l1.391-11.13a.69.69 0 00-.169-.553l.001.001z"/><path fill="var(--color3, #fafafa)" d="M11.826 17.391a.695.695 0 01-.685-.577l-.001-.004-1.391-8.348a.695.695 0 011.371-.233l.001.004 1.391 8.348a.695.695 0 01-.686.81zm3.478-.695h-.003a.696.696 0 01-.693-.63v-.003l-.696-7.652a.696.696 0 01.627-.758l.006-.001a.695.695 0 01.755.63l.696 7.652a.695.695 0 01-.63.755l-.063.006zM18.782 16a.696.696 0 01-.696-.696V8.348a.696.696 0 111.392 0v6.956a.696.696 0 01-.696.696zm3.479-.696h-.078a.696.696 0 01-.619-.765l.001-.007.696-6.261a.705.705 0 01.772-.619.696.696 0 01.615.768l-.696 6.261a.696.696 0 01-.691.623zm3.478-.695a.696.696 0 01-.673-.869l-.001.005 1.391-5.565a.696.696 0 011.357.305l-.009.036.001-.005-1.391 5.565a.697.697 0 01-.675.527z"/><path fill="var(--color1, #455a64)" d="M28.521 22.956H12.464a4.884 4.884 0 01-4.775-3.914L4.298 2.086H.695a.696.696 0 110-1.392h4.174c.335 0 .615.237.681.552l.001.005 3.503 17.516a3.487 3.487 0 003.41 2.796h16.057a.696.696 0 110 1.392z"/></symbol></defs></svg>	
+
+	<div class="alert">Tienes un mensaje sin leer</div>
+	<div class="alert alert--success">Tu compra se realizo con exito</div>
+	<div class="alert alert--error">Tu compra tuvo un error de pago</div>
+	<div class="alert alert--warning">Compra en espera de aceptación</div>
+
+	<header class="page_header">
+		<a href="" class="logo page-header__logo">Mi primer logo</a>	
+		<!--
+		<img src="" class="logo_image" alt="Logo del sitio">
+		-->	
+		<ul class="nav">
+			<li class="nav__item">
+				<a class="nav__link" href="#">Sobre nosotros</a>
+			</li>
+			<li class="nav__item">
+				<a class="nav__link" href="#">Galería</a>
+			</li>
+			<li class="nav__item">
+				<a class="nav__link" href="#">Contáctanos</a>
+			</li>
+		</ul>
+		
+	</header>
+	<main class="page_main">
+		<!-- 
+		Elemento - Siempre es la parte de un bloque, no de otro elemento. Esto significa que en el nombre de la clase de elemento no se puede asignar a una jerarquía del formulario bloque__elemento1__elemento2.
+		-->
+		<article class="product"> 
+			<div class="product__overlay">
+				<img class="product__image" src="">
+			</div>
+			<div class="product__content">
+				<h2 class="product__name">Refrigerador</h2>
+				<p class="product__description">Refrigerador precioso...</p>
+				<a class="product__link" href="#">Ver todas las especificaciones</a>
+			</div>
+			<div class="product__meta">
+				<p class="product__price">Precio: 30000</p>
+				<p class="product__quantity">Quedan: 8 unidades</p>
+			</div>
+		</article>
+
+		<article class="product"> 
+			<div class="product__overlay">
+				<img class="product__image" src="">
+			</div>
+			<div class="product__content">
+				<h2 class="product__name">Calefactor</h2>
+				<p class="product__description">Calefactor precioso...</p>
+				<a class="product__link" href="#">Ver todas las especificaciones</a>
+				<button type="button" class="button">
+					<svg class="button__icon button_icon--start" width="20" height="20">
+							<use href="#cart"></use>
+					</svg>
+					<span class="button__label">Add to cart</span>
+				</button>
+			</div>
+			<div class="product__meta">
+				<p class="product__price">Precio: 30000</p>
+				<p class="product__quantity">Quedan: 8 unidades</p>
+
+				<button type="button" class="button">
+					<span class="button__label">Add to cart</span>
+				</button>
+
+			</div>
+		</article>
+
+		<article class="product"> 
+			<div class="product__overlay">
+				<img class="product__image" src="">
+			</div>
+			<div class="product__content">
+				<h2 class="product__name">Licuadora</h2>
+				<p class="product__description">Licuadora preciosa...</p>
+				<a class="product__link" href="#">Ver todas las especificaciones</a>
+			</div>
+			<div class="product__meta">
+				<p class="product__price">Precio: 30000</p>
+				<p class="product__quantity">Quedan: 8 unidades</p>
+				<button type="button" class="button">
+					<svg class="button__icon" width="20" height="20">
+							<use href="#cart"></use>
+					</svg>
+				</button>
+				
+			</div>
+		</article>
+		<!-- ❌ Un elemento fuera del bloque no tiene sentido
+		<h3 class="product__name">Refrigerador</h1>
+		-->
+	</main>
+	<footer class="page_footer">
+		<a class="logo" href="">Mi Logo</a>
+	</footer>
+
+</body>
+</html>

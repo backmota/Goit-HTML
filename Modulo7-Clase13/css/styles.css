@@ -1,0 +1,159 @@
+*{
+	box-sizing: border-box;
+}
+
+.page{
+	font-family: sans-serif;
+	background-color: #f9f9fd;
+	
+}
+
+.cart{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f9f9fd;
+}
+
+.page_header{
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #2196f3;
+}
+
+.page_footer{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: #607d8b;
+}
+
+.alert{
+	max-width: 400px;
+	border-radius: 4px;
+	padding: 20px;
+	font-size: 16px;
+	color: #2a2a2a;
+  	background-color: #fff;
+  	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    margin: 10px;
+}
+
+.alert--success{
+	color: #fff;
+	background-color: #388e3c;
+}
+
+.alert--error{
+	color: #fff;
+	background-color: #f44336;
+}
+
+.alert--warning{
+	color: #fff;
+	background-color: #ffc107;
+}
+
+.page-header__logo{
+	margin-right: 50px;
+}	
+
+.logo{
+	display: inline-flex;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+
+.nav{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+}
+
+.nav__item:not(:last-child){
+	 margin-right: 10px;
+}
+
+.nav__link{
+	display: block;
+	  padding: 15px 30px;
+	  border: 1px solid #fff;
+	  border-radius: 4px;
+	  text-decoration: none;
+	  color: #fff;
+}
+
+.button{
+	display: inline-flex;
+	flex-shrink: 0;
+	align-items: center;
+	padding: 10px 20px;
+	border: none;
+	margin: 5px;
+	border-radius: 4px;
+	font-family: sans-serif;
+	font-size: 16px;
+	box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+	    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+}
+
+.button__icon{
+	display: inline-flex;
+}
+
+.button__icon--start{
+	margin-right: 10px;
+}
+
+.button_icon--end{
+	margin-left: 10px;
+}
+
+.page_main{
+	flex-grow: 1;
+}
+
+.product{
+
+}
+.product__overlay{
+
+}
+.product__image{
+
+}
+.product__content{
+
+}
+.product__name{
+
+}
+.product__description{
+
+}
+.product__link{
+
+}
+.product__meta{
+
+}
+.product__price{
+
+}
+.product__quantity{
+
+}
+
+
+
+

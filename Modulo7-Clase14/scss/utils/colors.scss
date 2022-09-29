@@ -1,0 +1,29 @@
+.button{
+	display: inline-flex;
+	flex-shrink: 0;
+	align-items: center;
+	padding: 10px 20px;
+	border: none;
+	margin: 5px;
+	border-radius: 4px;
+	font-family: sans-serif;
+	font-size: 16px;
+	box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+	    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+}
+
+.button__icon{
+    @extend .button;
+	display:  inline-flex;
+}
+
+.button__icon--start{
+    @extend .button;
+	margin-right: 10px;
+}
+
+.button_icon--end{
+    @extend .button;
+	margin-left: 10px;
+}
