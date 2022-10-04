@@ -1,0 +1,53 @@
+$colors: "#F44336", "#3F51B5", "#4CAF50", "#00BCD4", "#E91E63", "#009688";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+  max-width: 1170px;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.element {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+  }
+
+@media screen and (min-width: 768px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    .element{
+        flex-basis: calc(100% / 2);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .element{
+        flex-basis: calc(100% / 3);
+    }
+    
+}
+
+@each $color in $colors {
+    $idx: index($colors, $color);
+
+    .element:nth-child(#{$idx}){
+        background-color: #{$color};
+    }
+}

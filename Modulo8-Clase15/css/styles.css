@@ -1,0 +1,55 @@
+/* El color azul no se muestra porque no existe un momento fuera de los media query */
+body{
+	background-color: blue;
+}
+
+
+/*Smartphones pequeños, iPhoneSE */
+/*
+Operador and (textualmente «Y») se utiliza no solo entre el tipo de medio y la condición del medio, sino también para vincular múltiples funciones de medio con verificaciones de valor.
+*/
+
+
+@media screen and (min-width:  600px) and (max-width:  900px){
+	body{
+	background-color: red;
+	}
+}
+
+
+
+/*Cuando trabajamos con operador OR debemos quitar el media-type*/
+@media (max-width: 600px), (min-width: 900px) {
+	body{
+	background-color: hotpink;
+	}
+}
+/*
+@media (max-width: 600px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    background-color: orange;
+  }
+}
+*/
+/*
+El operador not (textualmente «NO») permite hacer una negación, es decir, cancelar la consulta de medios. La palabra clave not se agrega al comienzo de la consulta de medios y se aplica a toda la consulta. Se usa muy raramente, en algunos casos específicos.
+
+Por ejemplo, anotemos la condición bajo la cual los estilos deben aplicarse en todas partes excepto en la impresión.
+*/
+@media not screen and (max-width: 500px){
+	h1{
+		visibility: hidden;
+	}
+}
+
+
+
+
+
+
