@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Gráficos adaptativos</title>
+</head>
+<body>
+	<!-- Image format from an image service.: https://picsum.photos/id/237/ширина/высота x1 
+<img src="https://picsum.photos/id/237/320/240" alt="Cute puppy">
+
+x2 
+<img src="https://picsum.photos/id/237/640/480" alt="Cute puppy">
+
+x3 
+<img src="https://picsum.photos/id/237/960/720" alt="Cute puppy">
+-->
+
+	<div class="box"></div>
+
+	<div class="product"></div>
+
+	<img srcset="https://picsum.photos/id/237/320/240 1x, https://picsum.photos/id/237/640/480 2x, https://picsum.photos/id/237/960/720 3x">
+
+
+	<img srcset="img/imagen.png 1x, img/imagen@2x.png 2x, img/imagen@3x.png 3x" src="img/imagen.png" width="320" height="240">
+
+	<picture>
+		<source srcset="https://picsum.photos/id/237/640/480" media="(min-device-pixel-ratio:  2), (min-resolution:  192dpi), (min-resolution: 2dppx)">
+		<source srcset="https://picsum.photos/id/237/960/720" media="min-device-pixel-ratio:  3), (min-resolution:  288dpi), (min-resolution: 2dppx)">
+		<img src="https://picsum.photos/id/237/300/200" alt="Cute puppy">
+	</picture>
+
+	<picture>
+		<source srcset="https://picsum.photos/id/237/400/600" media="(max-width: 600px)">
+		<source srcset="https://picsum.photos/id/237/800/400" media="(min-width: 601px)">
+		<img src="https://picsum.photos/id/237/300/200" alt="Cute puppy">
+	</picture>
+
+	<picture>
+		<source srcset="img/Imagen-mobile.png" media="(max-width: 600px)">
+		<source srcset="img/Imagen-desktop.png" media="(min-width: 601px)">
+		<imsg src="img/Imagen-desktop.png" alt="Imagen Header">
+	</picture>
+
+</body>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.box{
+	width: 320px;
+	height: 240px;
+	background-image: url("https://picsum.photos/id/237/320/240");
+	background-size: 320px 240px;
+	color:  white;
+	font-size: 36px;
+}
+
+.product{
+	width: 320px;
+	height: 240px;
+	background-image: url(".././img/imagen.png");
+	background-size: 320px 240px;
+	color:  white;
+	font-size: 36px;
+}
+
+@media screen (max-width:  600px){
+	picture{
+		width: 100%;
+	}
+}
+
+
+/* Código para pantallas 2x*/
+
+@media screen and (min-device-pixel-ratio:  2), 
+	screen and (min-resolution:  192dpi), 
+	screen and (min-resolution: 2dppx){
+		.box{
+			background-image: url("https://picsum.photos/id/237/640/480");
+		}
+		.product{
+			background-image: url(".././img/imagen@2x.png");
+		}
+
+	}
+
+@media screen and (min-device-pixel-ratio:  3), 
+	screen and (min-resolution:  288dpi), 
+	screen and (min-resolution: 3dppx){
+		.box{
+			background-image: url("https://picsum.photos/id/237/960/720");
+		}
+		.product{
+			background-image: url(".././img/imagen@3x.png");
+		}
+	}	
